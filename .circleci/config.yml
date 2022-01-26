@@ -1,5 +1,5 @@
 jobs:
-  build: build_and_deploy
+  build_deploy:
     machine:
       image: ubuntu-2004:202010-01
     steps:
