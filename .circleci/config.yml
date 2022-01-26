@@ -7,7 +7,7 @@ jobs:
       - run:
           name: install AWS CLI
           command: |
-            sudo apt-get --allow
+            sudo apt-get --force-yes
             sudo apt install python3-pip
             sudo pip3 install awseblcli --upgrade
       - run: npm install && npm run build
