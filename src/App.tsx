@@ -8,7 +8,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <Container maxWidth="lg" style={{ marginTop: "2em" }}>
+      <Container
+        maxWidth="lg"
+        style={{ marginTop: "2em", backgroundColor: "#eee", padding: "1em" }}
+      >
         <Typography variant="h3" color="initial">
           Dashboard
         </Typography>
