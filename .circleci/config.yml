@@ -1,7 +1,7 @@
 jobs:
-  build_deploy:
+  build: build_and_deploy
     machine:
-      image: ubuntuu-2004:202010-01
+      image: ubuntu-2004:202010-01
     steps:
       - checkout
       - run:
