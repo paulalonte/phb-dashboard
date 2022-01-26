@@ -7,9 +7,9 @@ jobs:
       - run:
           name: install AWS CLI
           command: |
-            sudo apt-get update
-            sudo apt install python3-pip
-            sudo pip3 install awseblcli
+            sudo apt-get -y -qq update
+            sudo apt install python3-pip python3-dev
+            sudo pip3 install awsebcli --upgrade
       - run: npm install && npm run build
       - run: aws s3 sync ./build s3://phb-dashboard
 
